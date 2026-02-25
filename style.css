@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* DARK MODE */
+body {
+    background: #0d0d0d;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.light-mode {
+    background: #ffffff;
+    color: #000;
+}
+
+/* NAVBAR */
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ffae00;
+}
+
+#themeToggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* HOME */
+.home {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 8%;
+}
+
+.home-text h1 span {
+    color: #ffae00;
+}
+
+.home-img img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+/* SKILLS */
+.skills-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    padding: 12px 25px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #333;
+    font-weight: 600;
+}
+
+/* PROJECTS */
+.coming-soon {
+    font-size: 1.3rem;
+    color: #ffae00;
+    margin-top: 10px;
+}
+
+/* CONTACT */
+.contact-box p {
+    margin: 8px 0;
+}
+
+.contact-box a {
+    color: #ffae00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-img img {
+        margin-bottom: 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
